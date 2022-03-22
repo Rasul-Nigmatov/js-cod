@@ -1,6 +1,6 @@
 //Number
 
-let a = 5;
+/* let a = 5;
 let b = 6;
 let variables = 330
 const sum = a + b;
@@ -14,7 +14,7 @@ let c = "Hormela okala"
 let d = "Salomat bol ukajonim"
 let e = c + d
 console.log(e = c + d)
-
+ */
 //String
 /* const Text = "Assalomu alekum"
 console.log(Text)
@@ -54,12 +54,17 @@ console.log (userText) */
 
 const userText = Number(prompt("2 chi sonni kiriting"))
 
-alert("Sizning Jovobingiz " + (UserTxt + userText) + " boladi deb tog`ri oylayman") */
+alert("Sizning Jovobingiz: " + (UserTxt + userText) + " boladi deb tog`ri oylayman") */
 
 //Ikkinchi sinf ishi
 
-const UserName = prompt("Ismingizni kiriting")
+/* const UserName = prompt("Ismingizni kiriting")
 
 const LastName = prompt("Familyangizni kiriting")
 
-alert("Sizzi ismingiz " + (UserName + " " + LastName) + " ekan")
+alert("Sizzi ismingiz " + (UserName + " " + LastName) + " ekan") */
+
+const firsNumber = Number(prompt("birinchi sonni kiriting"));
+const secondNumber = Number(prompt("ikkinchi sonni kiriting"));
+
+alert(firsNumber + secondNumber)
