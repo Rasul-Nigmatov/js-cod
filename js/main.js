@@ -50,8 +50,16 @@ console.log (userText) */
 
 //Vazifa sinf iwi
 
-const UserTxt = Number(prompt("1 chi sonni kiriting"))
+/* const UserTxt = Number(prompt("1 chi sonni kiriting"))
 
 const userText = Number(prompt("2 chi sonni kiriting"))
 
-alert("Sizning Jovobingiz " + (UserTxt + userText) + " boladi deb tog`ri oylayman")
+alert("Sizning Jovobingiz " + (UserTxt + userText) + " boladi deb tog`ri oylayman") */
+
+//Ikkinchi sinf ishi
+
+const UserName = prompt("Ismingizni kiriting")
+
+const LastName = prompt("Familyangizni kiriting")
+
+alert("Sizzi ismingiz " + (UserName + " " + LastName) + " ekan")
