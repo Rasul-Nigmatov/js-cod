@@ -75,7 +75,7 @@ alert(firsNumber + secondNumber) */
 
 //uy ishi 
 
-let elResult = document.querySelector(".result")
+/* let elResult = document.querySelector(".result")
 
 let USD = 9433;
 
@@ -97,6 +97,55 @@ if (UserBudjet >= total) {
     alert("Iltimos 0 dan kotta son kiriting !");
 } else {
     elResult.textContent = "Alisher oka oq yol"
-} 
+}  */
+
+//Qisqach yozish iwi console dagi qiymat
+
+/* let user = 'O`zbekiston'
+let uzb = "Ideal"
+
+console.log(`${user} ${uzb} ${4 + 2 - 1}` ) */
+
+//Uy ishi vazifasi
+
+const a = Number (prompt("1chi sonni kiriting"));
+
+const b = Number(prompt("2chi sonni kiriting"));
+
+//Foulse beradigan qiymat    ""  0  NaN
+
+if (a  &&  b) {
+    
+    const sum = Number(a) + Number(b);
+    
+    const discription = a - b;
+    
+    const separation = a / b; 
+    
+    const multiplication = a * b
+    
+    alert(`
+    Yeg'indisi:  ${sum}
+    Ayirmasi: ${discription} 
+    Kopaytirilishi: ${multiplication} 
+    Bolovi: ${separation}`)
+
+}   else if (!a && b) {
+    alert("Siz birinchi qiymattini notog`ri  kiritingiz")
+
+} else if (a && !b) {
+    alert("Siz ikkinchi qiymatini notog`ri kiritingiz")
+    
+} else {
+        alert("Siz Son kiritshingiz kerak edisku")
+    }
 
 
+/* if (a) {
+    alert ("True keldi oka")
+} */
+
+
+// alert("Assalomu alekum oka " + "\n" + "Kuningiz hayrli otsin" + "\n" + "Bratan che tam" ) 
+
+// console.log(typeof true) 
