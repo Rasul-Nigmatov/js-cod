@@ -64,7 +64,39 @@ const LastName = prompt("Familyangizni kiriting")
 
 alert("Sizzi ismingiz " + (UserName + " " + LastName) + " ekan") */
 
-const firsNumber = Number(prompt("birinchi sonni kiriting"));
+//String Number ga otaqazib beradi
+
+/* const firsNumber = Number(prompt("birinchi sonni kiriting")); 
 const secondNumber = Number(prompt("ikkinchi sonni kiriting"));
 
-alert(firsNumber + secondNumber)
+alert(firsNumber + secondNumber) */
+
+
+
+//uy ishi 
+
+let elResult = document.querySelector(".result")
+
+let USD = 9433;
+
+let EURO = 10354;
+
+const UserBudjet = Number(prompt("Iltomis pul miqdorini kiriting!", 0 ))
+
+let card = 500;
+
+let hospital = 250;
+
+let mesium = 120;
+
+let total = (card + hospital) * UserBudjet * ( mesium * EURO) 
+
+if (UserBudjet >= total) {
+    elResult.textContent = "Alisher oka pulingiz ozgina etmayapti"
+} else if (UserBudjet< 0 || UserBudjet == "") {
+    alert("Iltimos 0 dan kotta son kiriting !");
+} else {
+    elResult.textContent = "Alisher oka oq yol"
+} 
+
+
