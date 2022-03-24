@@ -150,3 +150,60 @@ if (a  &&  b) {
 // alert("Assalomu alekum oka " + "\n" + "Kuningiz hayrli otsin" + "\n" + "Bratan che tam" ) 
 
 // console.log(typeof true) 
+
+//Uy ishi
+
+/* const title = document.querySelector (".result")
+
+const money = prompt ("Bor pulingizni kiriting")
+
+if (money) {
+    const USD = 9433;
+    
+    const EURO = 10300;
+    
+    const HOTEL = 250;
+    
+    const CARD = 500;
+    
+    const ENTERTAMINET = 120;
+    
+    const expensesUzs =  (HOTEL  + CARD) * USD +ENTERTAMINET
+    if (isNaN(money)) {
+        title.textContent = "Noto'g'ri jovob"
+
+
+        alert("Iltimos tog`ri qiymat kiriting")
+
+    } else if (expensesUzs <= money) {
+        alert("Ketishimiz mumkim")
+
+    } else if (money < 0) {
+        alert("bizni ahmoq qimohchimisan")
+
+    } else {
+        alert ("KEtish mumkin emas")
+    } 
+} */
+
+/* const money = +prompt("Bor pulingizni kiriting")
+ */
+
+
+const form = document.querySelector(".form");
+const input = document.querySelector(".form__usz-input");
+
+const usdResult = document.querySelector(".usd-result");
+const eurResult = document.querySelector(".eur-result");
+const rubResult = document.querySelector(".rub-result");
+
+const USD = 11560;
+
+form.addEventListener("submit", function (evt){
+    evt.preventDefault();
+
+    const inputValue = input . value;
+
+    usdResult.textContent = "USD: ";
+    usdResult.textContent += inputValue / USD 
+}) ;
