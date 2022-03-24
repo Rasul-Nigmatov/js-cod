@@ -106,9 +106,9 @@ let uzb = "Ideal"
 
 console.log(`${user} ${uzb} ${4 + 2 - 1}` ) */
 
-//Uy ishi vazifasi
+//Uy ishi vazifasi Bolean
 
-const a = Number (prompt("1chi sonni kiriting"));
+/* const a = Number (prompt("1chi sonni kiriting"));
 
 const b = Number(prompt("2chi sonni kiriting"));
 
@@ -129,16 +129,17 @@ if (a  &&  b) {
     Ayirmasi: ${discription} 
     Kopaytirilishi: ${multiplication} 
     Bolovi: ${separation}`)
-
+    
 }   else if (!a && b) {
     alert("Siz birinchi qiymattini notog`ri  kiritingiz")
 
 } else if (a && !b) {
     alert("Siz ikkinchi qiymatini notog`ri kiritingiz")
-    
+
 } else {
         alert("Siz Son kiritshingiz kerak edisku")
-    }
+        
+    } */
 
 
 /* if (a) {
