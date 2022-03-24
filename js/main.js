@@ -202,8 +202,7 @@ const USD = 11560;
 form.addEventListener("submit", function (evt){
     evt.preventDefault();
 
-    const inputValue = input . value;
+    const inputValue = input;
 
-    usdResult.textContent = "USD: ";
-    usdResult.textContent += inputValue / USD 
+    usdResult.textContent = `USD:  ${inputValue / USD}`;
 }) ;
