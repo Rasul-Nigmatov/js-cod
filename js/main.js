@@ -190,7 +190,7 @@ if (money) {
  */
 
 
-const form = document.querySelector(".form");
+/* const form = document.querySelector(".form");
 const input = document.querySelector(".form__usz-input");
 
 const usdResult = document.querySelector(".usd-result");
@@ -202,7 +202,104 @@ const USD = 11560;
 form.addEventListener("submit", function (evt){
     evt.preventDefault();
 
-    const inputValue = input;
+    const inputValue = input.value;
 
     usdResult.textContent = `USD:  ${inputValue / USD}`;
-}) ;
+}) ; */
+//Object
+/* const desk = {
+    oyoqlariSoni: 4,
+    rangi: "oq",
+    daraxti: "cinboy",
+    mattaliBormi: true 
+}
+
+console.log(desk) */
+
+const lukoil = {
+    rezume: "Rezume elektron tarzda",
+    doctor: "medosmotrdan o`tish kerak",
+    name: "General director: Sayahov",
+    Ai:  80,
+    benzin: 7000,
+    "min-ielts": 4,
+    img: "https://repost.uz/storage/uploads/file_5ab09c6ea86578.296878731521523822.jpg",
+    5: 5, // <== berilvotgasn payta console dagi qoussi icida oddiy qous ocilada masalan [  ];
+
+    rector: {
+        name: "doctor mr falonchi",
+        age: 50 
+    }
+}
+/* console.log(lukoil["min-ielts"]) */
+
+
+//dom dan kelgan narsadan faqat gina wu yoldia keliladi
+const title =   "minIELTS";
+
+console.log(lukoil.rector.name); 
+
+const container = document.querySelector(".container");
+const content = document.querySelector("content")
+
+const lukoilArticle = document.createElement("article");
+lukoilArticle.className = "lukoil-article";
+lukoilArticle.id = "lukoil-1";
+
+
+const lukTitle = document.createElement("h2");
+lukTitle.textContent = lukoil.name;
+lukTitle.className = "lukoil-title";
+
+
+
+const lukDiscrip = document.createElement("p");
+lukDiscrip.className = "lukoil-discrip";
+lukDiscrip.textContent = lukoil.rezume;
+
+let lukContent = document.createElement("div")
+lukContent.className = "lukoil-title";
+
+const lukDiscription = document.createElement("p");
+lukDiscription.className = "lukoil-discription";
+lukDiscription.textContent = lukoil.benzin
+
+const lukText = document.createElement("p")
+lukText.className = "lukoil-text";
+lukText.textContent = lukoil.Ai
+
+const lukImg = document.createElement("img");
+lukImg.className = "lukoil-img";
+lukImg.src = lukoil.img;
+
+container.append(lukoilArticle);
+lukoilArticle.append(lukTitle);
+lukoilArticle.prepend(lukDiscrip);
+lukoilArticle.append(lukContent)
+lukContent.append(lukDiscription)
+lukContent.append(lukText)
+lukoilArticle.append(lukImg);
+
+
+
+
+const anjir = {
+    menu: "assorti",
+    price: "22000",
+    all: "hammasi",
+    img: "https://lh3.googleusercontent.com/-rkZ6GIcR4KQ/YC4R76CR_JI/AAAAAAAAhCY/fgatMnKxSHULJYusCt6xNz04Yq82lEhagCJUFGAYYCw/w768-h768-n-o-k-v1/"
+}
+const wrapper = document.querySelector("wrapper");
+
+const anjirArticle2 = document.createElement("article2");
+anjirArticle2.className = "anjir-article";
+
+const anjTitle = document.createElement("h2");
+anjTitle.className = "anjir-title";
+anjTitle.className = anjir.menu
+/* anjirTitle.textContent = anjir.menu; */
+const anjImg = document.createElement("img");
+anjImg.className = "anjir-img";
+anjImg.src = anjir.img;
+
+wrapper.append(anjirArticle2)
