@@ -190,31 +190,19 @@ if (money) {
  */
 
 
-/* const form = document.querySelector(".form");
-const input = document.querySelector(".form__usz-input");
 
-const usdResult = document.querySelector(".usd-result");
-const eurResult = document.querySelector(".eur-result");
-const rubResult = document.querySelector(".rub-result");
-
-const USD = 11560;
-
-form.addEventListener("submit", function (evt){
-    evt.preventDefault();
-
-    const inputValue = input.value;
-
-    usdResult.textContent = `USD:  ${inputValue / USD}`;
-}) ; */
 //Object
-/* const desk = {
+const desk = {
     oyoqlariSoni: 4,
     rangi: "oq",
     daraxti: "cinboy",
     mattaliBormi: true 
 }
 
-console.log(desk) */
+console.log(desk)
+
+
+
 
 const lukoil = {
     rezume: "Rezume elektron tarzda",
@@ -302,4 +290,21 @@ const anjImg = document.createElement("img");
 anjImg.className = "anjir-img";
 anjImg.src = anjir.img;
 
-wrapper.append(anjirArticle2)
+    /* wrapper.append(anjirArticle2)
+ */
+const form = document.querySelector(".form");
+const input = document.querySelector(".form__uzs-input");
+
+const usdResult = document.querySelector(".usd-result");
+const eurResult = document.querySelector(".eur-result");
+const rubResult = document.querySelector(".rub-result");
+
+const USD = 11485;
+
+form.addEventListener("submit", function (evt){
+    evt.preventDefault();
+
+    const inputValue = input.value;
+
+    usdResult.textContent = `USD:  ${inputValue / USD}`;
+}) ;
