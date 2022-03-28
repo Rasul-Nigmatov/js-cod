@@ -192,7 +192,7 @@ if (money) {
 
 
 //Object
-const desk = {
+/* const desk = {
     oyoqlariSoni: 4,
     rangi: "oq",
     daraxti: "cinboy",
@@ -218,12 +218,19 @@ const lukoil = {
         name: "doctor mr falonchi",
         age: 50 
     }
-}
+} */
 /* console.log(lukoil["min-ielts"]) */
 
 
+
+
+
+
+
+
+
 //dom dan kelgan narsadan faqat gina wu yoldia keliladi
-const title =   "minIELTS";
+/* const title =   "minIELTS";
 
 console.log(lukoil.rector.name); 
 
@@ -285,13 +292,13 @@ anjirArticle2.className = "anjir-article";
 const anjTitle = document.createElement("h2");
 anjTitle.className = "anjir-title";
 anjTitle.className = anjir.menu
-/* anjirTitle.textContent = anjir.menu; */
+/anjirTitle.textContent = anjir.menu; 
 const anjImg = document.createElement("img");
 anjImg.className = "anjir-img";
 anjImg.src = anjir.img;
 
-    /* wrapper.append(anjirArticle2)
- */
+    wrapper.append(anjirArticle2)
+
 const form = document.querySelector(".form");
 const input = document.querySelector(".form__uzs-input");
 
@@ -307,4 +314,92 @@ form.addEventListener("submit", function (evt){
     const inputValue = input.value;
 
     usdResult.textContent = `USD:  ${inputValue / USD}`;
-}) ;
+}) ; */
+
+
+
+
+//Arraylar
+
+/* const fruits = ["appale", "banana", "orange"];
+
+for (let i = 0; i <=fruits.length -1 ; i++) {
+    console.log(fruits[i]); 
+    console.log(fruits[0]);
+}  */
+
+
+//Array ni aniq qilib qaysi birini olib kelish
+/* const arry = [[1, 2, 3, 4, 5], 2, "baby", "Abdusattor"];
+
+console.log(arry);
+console.log(arry[0]);
+console.log(arry[0][2]); */
+
+//Array orqali harifini olib keliw
+/* console.log("onajonim"[2]); */
+
+const cars = [
+    {
+        carname: "Nexia R3",
+        price: "Price: $8100",
+        discription: "Machine in good condition",
+        img: "https://apollo-olx.cdnvideo.ru/v1/files/m69w5j6hqoyj-UZ/image;s=644x461",
+    },
+    {
+        carname: "Captiva",
+        price: "Price: $34000",
+        discription: "Machine in good condition",
+        img: "https://apollo-olx.cdnvideo.ru/v1/files/0wmz8uoy56zt-UZ/image;s=644x461",
+    },
+    {
+        carname: "Nexia",
+        price: "Pricew: $3500",
+        discription: "The car is not in the best condition",
+        img: "https://apollo-olx.cdnvideo.ru/v1/files/64vzd1d300ds1-UZ/image;s=644x461",
+    },
+    {
+        carname: "Malibu Premeir",
+        price: "Pricew: $25700",
+        discription: "Machine in perfect condition",
+        img: "https://apollo-olx.cdnvideo.ru/v1/files/xren677y4ftg2-UZ/image;s=644x461",
+    },
+    {
+        carname: "Tracker",
+        price: "Pricew: $22000",
+        discription: "Machine in perfect condition",
+        img: "https://apollo-olx.cdnvideo.ru/v1/files/ikeivaqs5vox2-UZ/image;s=644x461",
+    },
+    {
+        carname: "Malibu",
+        price: "Pricew: $19000",
+        discription: "The car is not in the best condition",
+        img: "https://apollo-olx.cdnvideo.ru/v1/files/9chcmlb8r3zu-UZ/image;s=644x461",
+    },
+    
+]
+const carsWrapper = document.querySelector(".cars");
+
+for (let i = 0; i < cars.length; i++) {
+    const car = document.createElement("li");
+    car.className = "cars__item"; 
+
+    const carTitle = document.createElement("h2");
+    carTitle.textContent = cars[i].carname;
+
+    const carPrice = document.createElement("p");
+    carPrice.textContent = cars[i].price;
+
+    const carDis = document.createElement("p");
+    carDis.textContent = cars[i].discription;
+
+    const carImg = document.createElement("img"); 
+    carImg.setAttribute("src", cars[i].img);
+
+    car.append(carImg);
+    car.append(carTitle);
+    car.append(carDis)
+    car.append(carPrice);
+
+    carsWrapper.append(car);
+}
